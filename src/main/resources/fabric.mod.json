@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "superheromod",
+  "version": "${version}",
+  "name": "Superhero Drops Mod",
+  "description": "Demir Golem, Creeper ve Spider'dan superkahraman esyalari dusurur; ozel menu ile yonetilir. Marvel/Disney ile resmi bir baglantisi yoktur, hayran yapimi bir moddur.",
+  "authors": [
+    "Sen"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.superheromod.SuperheroMod"
+    ],
+    "client": [
+      "com.superheromod.SuperheroClient"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "1.20.x",
+    "java": ">=17"
+  }
+}
