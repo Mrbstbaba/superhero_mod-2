@@ -10,7 +10,6 @@ import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
 
 import java.util.List;
-import net.minecraft.client.item.TooltipContext;
 
 public class IronManItem extends Item {
     public IronManItem(Settings settings) {
