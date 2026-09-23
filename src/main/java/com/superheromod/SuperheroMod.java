@@ -52,7 +52,7 @@ public class SuperheroMod implements ModInitializer {
         });
 
         // Creeper, Hulk modu ACIK bir oyuncu tarafindan oldurulursen -> %1 Hulk esyasi
-        LootTableEvents.MODIFY_DROPS.register((key, tableBuilder, source, context) -> {
+        LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
             if (key.equals(EntityType.CREEPER.getLootTableId())) {
                 var killer = context.get(LootContextParameters.KILLER_ENTITY);
                 if (killer instanceof ServerPlayerEntity player) {
